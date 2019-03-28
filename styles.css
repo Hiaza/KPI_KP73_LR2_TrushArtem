@@ -8,68 +8,120 @@
   url("./fonts/geomanist-regular.svg") format("svg");
 }
 
+.main-settings-for-body{
+  min-width:1024px; 
+  padding: 0; 
+  margin:0; 
+  overflow-x:hidden;
+  color: #2c2c35;
+  
+}
 
+.fixed-part{
+  position:fixed;
+  padding: 0; 
+  margin:0
+}
 
 .Bacground-black-cover {
     width: 50vw;
     height: 100vh;
     padding: 0;
-    background-image: linear-gradient(to bottom, rgba(12, 12, 24, 0), rgba(5, 5, 11, 0) 58%, rgba(5, 5, 10, 0.49));
+    background-image: url(./photos/wallpaper.png); 
+    background-size: 100% 100%;
   }
+  .container-temp2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;    
+  }
+  
+.container-temp{
+    padding-top:3.7vh;
+    display: flex;
+    align-items: center;   
+  }
+
+.box-of-social-icons{
+  position:fixed; 
+  top: 81.64vh;
+  left: 42.15vw;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-with-link-to-website{
+  position:fixed;  
+  top: 90vh;
+  left: 5.2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-welcome{
+  position: relative;
+  top: 0;
+  left: 50vw;
+  width: 50vw;  
+  height: 100vh;
+  z-index: 1;
+}
+
+.box-of-headers{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
 
 .Desktop-HD {
-
     --white: white;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
     background-color: var(--white);
-  }
+}
 
   .Headline-H1 {
-    padding-top:37.8vh; 
-    padding-left:55vw;
-    padding-right:8vw;
-    margin: 0;
-    width: 35.625vw;
+    padding-left:5vw;
+    padding-right:8vw; 
     font-family: 'Geomanist';
     font-size: 3em;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.21;
-    letter-spacing: normal;
-    color: #2c2c35;
   }
 
   .Sub-title {
-    width: 39.72vw;
-    height: 11.71vh;
     padding-top:2vh; 
-    padding-left:55vw;
+    padding-left:5vw;
+    font-weight: normal;
     padding-right:4vw;
-    margin: 0;
     font-family: Helvetica;
     font-size: 1.125em;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.56;
-    letter-spacing: normal;
-    color: #2c2c35;
   }
 
   .arrow-Path-2 {
-    padding-top:25.4vh;
-    padding-left:74.38vw;
+    position: relative;
+    z-index: 10; 
+    top:-10.9vh;
+    left: 24.38vw;
     width: 30px;
     height: 30px;
     /*border: solid 4px #5a5aff;*/
   }
 
   .arrow-Path-3 {
-    padding-left:74.38vw;
-    padding-bottom: calc(8.89vh - 30px);
+    position: relative;
+    z-index: 10; 
+    left:24.38vw;
+    top:-10.3vh;
     width: 30px;
     height: 30px;
     /*border: solid 4px #5a5aff;*/
@@ -81,8 +133,6 @@
     transform: scale(1.2);
   }
   .Croop_Author {
-    position:absolute;
-    margin-top:3.7vh;
     margin-left:4.3vw;
     width: 80px;
     height: 80px;
@@ -102,50 +152,35 @@
   }
 
   .User-name {
-    margin-top:5.27vh;
-    margin-left:calc(1.8vw + 4.3vw + 80px);
+    margin-left: 26px;
     margin-bottom: 0;
     padding-bottom: 0;
     height: 2.14vh;
     font-family: Helvetica;
     font-size: 1.125em;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: var(--white);
   }
 
   .Blog {
-    margin-top: calc(5.27vh + 18px + 0.39vh);
-    margin-left: calc(1.8vw + 4.3vw + 80px + 1.32vw + 0.56vw);
     font-family: Helvetica;
     font-size: 1em;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: var(--white);
   }
   .Line {
-    margin-top: calc(5.27vh + 18px + 1.27vh);
-    margin-left:calc(1.8vw + 4.3vw + 80px);
+    margin-left: 26px; 
+    margin-right: 8px; 
     width: 1.32vw;
     border: solid 0.11em var(--white);
   }
 
   .Go-to-my-website {
-    margin-top: calc(5.27vh + 7.81vh + 80.37vh);
-    margin-left: calc(5.2vw + 0.7vw + 0.694vw);
+    padding-left: 10px;
     font-family: Helvetica;
     font-size: 1em;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.63;
-    letter-spacing: normal;
     color: var(--white);
     transition: all 0.6s;
   }
@@ -162,21 +197,19 @@
   }
   
   .Go-to-my-website a:hover:before {
-            width: 50%;
-            left: 49%;
+            width: 100%;
+            left: 0%;
             background:complement(#00aeff);
   }
 
   .Shape {
-    margin-top: calc(5.27vh + 7.81vh + 81vh);
-    margin-left: calc(5.2vw);
     width: 0.7vw;
     height: 0.88vw;
     object-fit: contain;
   }
 
   .Oval-2-Copy {
-    margin-top:  calc(5.27vw + 97px);
+    margin-top: 0;
     margin-left: 41.18vw;
     margin-bottom: 0vh;
     border-radius: 32px;
@@ -189,16 +222,12 @@
   }
 
   .Shape2 {
-    margin-top: calc(5.27vw + 97px + 22.3px);
-    margin-left: calc(41.18vw + 21.3px);
     width: 19.3px;
     height: 20.3px;
     object-fit: contain;
   }
 
   .facebook-logo {
-    margin-top: 81.64vh;
-    margin-left: 42.64vw;
     transition: all 300ms linear 0ms;
     width: 11px;
     height: 20px;
@@ -208,17 +237,13 @@
   
 
   .instagram-logo {
-    margin-top: calc(81.64vh + 20px + 2.83vh);
     transition: all 300ms linear 0ms;
-    margin-left: 42.15vw;
-    width: 26px;
+   width: 26px;
     height: 26px;
     object-fit: contain;
   }
 
   .LinkedIn {
-    margin-top: calc(81.64vh + 20px + 2.83vh + 26px + 2.73vh);
-    margin-left: 42.29vw;
     width: 22px;
     height: 21px;
     object-fit: contain;
@@ -253,18 +278,13 @@
   }
 
   .Headline-H2 {
-    margin-top: 5vh;
+    margin-top: 7vh;
     margin-bottom: 0vh;
     padding-bottom: 0vh;
     width: 30vw;
     font-family: Geomanist;
     font-size: 2.25em;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #2c2c35;
   }
 
   .Text {
@@ -274,13 +294,23 @@
     font-family: Helvetica;
     font-size: 1em;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.75;
-    letter-spacing: normal;
     color: #2c2c35;
   }
-  
+
+  .margin-for-Text1{
+    margin-top: 2.32vh;
+  }
+  .margin-for-Text2{
+    margin-top:2.5vh;
+  }
+  .margin-for-Text3{
+    margin-top:3.1vh;
+  }
+  .margin-for-Text4{
+    margin-top:1.95vh;
+  }
+
   .Sherwood-Forest-Lake {
     margin-left: 0vw;
     float:left;
@@ -291,8 +321,15 @@
     height: 290px;
   }
 
+.figcapture-temp{
+  margin: 0;
+  width: 50vw;
+}
+
   .Width-lim-for-content {
-    margin-left: 50vw;
+    position: relative;
+    left: 50vw;
+    width: 50vw;
   }
 
   .Image {
@@ -309,10 +346,7 @@
     font-family: Helvetica;
     font-size: 1em;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.75;
-    letter-spacing: normal;
     text-align: center;
     color: #ababab;
   }
@@ -328,11 +362,6 @@
     font-family: Geomanist;
     font-size: 1.875em;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #2c2c35;
   }
 
   .Text-bold-hyperlink {
@@ -342,11 +371,7 @@
     font-family: Helvetica;
     font-size: 1em;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.75;
-    letter-spacing: normal;
-    color: #2c2c35;
   }
   .text-style-1 {
     font-weight: bold;
@@ -360,11 +385,6 @@
     font-family: Geomanist;
     font-size: 1.5em;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #2c2c35;
   }
 
   .cite {
@@ -376,11 +396,8 @@
     font-size: 1.05em;
     font-weight: normal;
     font-style: italic;
-    font-stretch: normal;
     line-height: 1.6;
-    letter-spacing: normal;
     text-align: center;
-    color: #2c2c35;
   }
 
   .sea-of-trees-forest-plain {
@@ -394,12 +411,28 @@
   }
 
   .Shadow-box {
-    margin-top: calc(7.03vw + 97px);
+    margin-top: -64px;
+    bottom: 64px;
     width: 50vw;
     margin-right: 0;
     height: 306px;
     box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.15);
     background-image: linear-gradient(to bottom, rgba(12, 12, 24, 0), rgba(155, 155, 231, 0) 70%, rgba(5, 5, 10, 0.12));
+  }
+
+  .clearfix { clear: both; }
+
+  .Share-div-that-lower{
+    position: relative;
+    z-index: 1;
+  }
+  .Share-div-that-highter{
+    position: relative;
+    top: -40.3px;
+    left: calc(41.18vw + 21.3px);
+    width: 19.3px;
+    height: 20.3px;
+    z-index: 2;
   }
 
   .Oval-3 {
@@ -420,11 +453,6 @@
     font-family: Helvetica;
     font-size: 1.125em;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #2c2c35;
   }
 
   .Author-BIO {
@@ -432,12 +460,15 @@
     padding-right: 5vw;
     font-family: Helvetica;
     font-size: 0.875em;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
+    font-weight: normal;  
     line-height: 1.71;
-    letter-spacing: normal;
-    color: #2c2c35;
+  }
+
+  .input-form{
+    margin-top: 0vh; 
+    margin-bottom: 0vh;
+    padding-top: 0vh; 
+    padding-bottom: 0vh;
   }
 
   .base {
@@ -470,10 +501,6 @@
     font-family: Helvetica;
     font-size: 16px;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     border: none;
     color: #bababa;
   }
@@ -495,10 +522,6 @@
     font-family: Helvetica;
     font-size: 16px;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: var(--white);
   }
 
