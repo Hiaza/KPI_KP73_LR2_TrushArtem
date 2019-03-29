@@ -8,13 +8,52 @@
   url("./fonts/geomanist-regular.svg") format("svg");
 }
 
-.main-settings-for-body{
+body{
   min-width:1024px; 
   padding: 0; 
   margin:0; 
-  overflow-x:hidden;
-  color: #2c2c35;
-  
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+  overflow-x: hidden;
+  --white: white;
+  background-color: var(--white);
+  color: #2c2c35;  
+}
+
+p {
+  margin: 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Geomanist, sans-serif;
+  font-weight: normal;
+  line-height: 1.20;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 72px 0 24px;
+}
+
+h3 {
+  font-size: 1.875em;
+  margin: 48px 0 24px;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 48px 0 24px;
 }
 
 .fixed-part{
@@ -23,21 +62,21 @@
   margin:0
 }
 
-.Bacground-black-cover {
+.Background-cover {
     width: 50vw;
     height: 100vh;
     padding: 0;
     background-image: url(./photos/wallpaper.png); 
     background-size: 100% 100%;
   }
-  .container-temp2{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;    
-  }
+.container-with-disc{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;    
+}
   
-.container-temp{
+.container-with-ava-and-disc{
     padding-top:3.7vh;
     display: flex;
     align-items: center;   
@@ -45,7 +84,7 @@
 
 .box-of-social-icons{
   position:fixed; 
-  top: 81.64vh;
+  top: 82.64vh;
   left: 42.15vw;
   height: 120px;
   display: flex;
@@ -56,7 +95,7 @@
 
 .box-with-link-to-website{
   position:fixed;  
-  top: 90vh;
+  top: 92.0vh;
   left: 5.2vw;
   display: flex;
   flex-direction: row;
@@ -82,22 +121,12 @@
   position: relative;
   z-index: 2;
 }
-
-.Desktop-HD {
-    --white: white;
-    background-color: var(--white);
-}
-
-  .Headline-H1 {
+  .Headline-at-the-beginning-of-webpage {
     padding-left:5vw;
     padding-right:8vw; 
-    font-family: 'Geomanist';
-    font-size: 3em;
-    font-weight: normal;
-    line-height: 1.21;
-  }
+   }
 
-  .Sub-title {
+  .Sub-title-at-the-beginning-of-webpage {
     padding-top:2vh; 
     padding-left:5vw;
     font-weight: normal;
@@ -107,7 +136,7 @@
     line-height: 1.56;
   }
 
-  .arrow-Path-2 {
+  .arrow-animation {
     position: relative;
     z-index: 10; 
     top:-10.9vh;
@@ -117,7 +146,7 @@
     /*border: solid 4px #5a5aff;*/
   }
 
-  .arrow-Path-3 {
+  .arrow-animation2 {
     position: relative;
     z-index: 10; 
     left:24.38vw;
@@ -127,12 +156,12 @@
     /*border: solid 4px #5a5aff;*/
   }
 
-  .Bitmap {
+  .Author-ava-in-fixed-part {
     width: 80px;
     height: 80px;
     transform: scale(1.2);
   }
-  .Croop_Author {
+  .Author-ava {
     margin-left:4.3vw;
     width: 80px;
     height: 80px;
@@ -140,7 +169,7 @@
     overflow: hidden;
   }
 
-  .Croop_Author2 {
+  .Author-ava-in-footer {
     margin-top: 6.11vh;
     margin-left: 5vw;
     margin-right: 0;
@@ -151,7 +180,7 @@
     overflow: hidden;
   }
 
-  .User-name {
+  .User-name-at-fixed-part {
     margin-left: 26px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -162,22 +191,21 @@
     color: var(--white);
   }
 
-  .Blog {
-    font-family: Helvetica;
-    font-size: 1em;
+  .text-Blog-at-fixed-part {
     font-weight: bold;
     color: var(--white);
   }
-  .Line {
+  .Line-at-fixed-part {
     margin-left: 26px; 
     margin-right: 8px; 
     width: 1.32vw;
     border: solid 0.11em var(--white);
   }
 
-  .Go-to-my-website {
+  .link-Go-to-my-website {
     padding-left: 10px;
     font-family: Helvetica;
+    text-decoration: none;
     font-size: 1em;
     font-weight: bold;
     line-height: 1.63;
@@ -185,7 +213,7 @@
     transition: all 0.6s;
   }
   
-  .Go-to-my-website a:before {
+  .link-Go-to-my-website:before {
         content: "";
         width: 0;
         height: 0.1em;
@@ -196,19 +224,19 @@
         transition: all 0.3s;
   }
   
-  .Go-to-my-website a:hover:before {
+  .link-Go-to-my-website:hover:before {
             width: 100%;
             left: 0%;
             background:complement(#00aeff);
   }
 
-  .Shape {
+  .arrow-before-link-to-website {
     width: 0.7vw;
     height: 0.88vw;
     object-fit: contain;
   }
 
-  .Oval-2-Copy {
+  .blue-Share-elips {
     margin-top: 0;
     margin-left: 41.18vw;
     margin-bottom: 0vh;
@@ -217,11 +245,11 @@
     height: 64px;
     background-color: #5a5aff;
   }
-  .Oval-2-Copy:hover {
+  .blue-Share-elips:hover {
     background:#05054B;
   }
 
-  .Shape2 {
+  .Share-icon {
     width: 19.3px;
     height: 20.3px;
     object-fit: contain;
@@ -272,81 +300,39 @@
    box-shadow 300ms linear 0ms, z-index 300ms linear 0ms;
 }
 
-  .Width-lim {
-    margin-left: 5vw;
-    margin-right: 5vw;
+  .Content-box {
+    position: relative;    
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 5vh;
   }
 
-  .Headline-H2 {
-    margin-top: 7vh;
-    margin-bottom: 0vh;
-    padding-bottom: 0vh;
-    width: 30vw;
-    font-family: Geomanist;
-    font-size: 2.25em;
-    font-weight: normal;
-  }
-
-  .Text {
-    margin-bottom: 0vh;
-    padding-bottom: 0vh;
-    width: 40vw;
-    font-family: Helvetica;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.75;
-    color: #2c2c35;
-  }
-
-  .margin-for-Text1{
-    margin-top: 2.32vh;
-  }
-  .margin-for-Text2{
-    margin-top:2.5vh;
-  }
-  .margin-for-Text3{
-    margin-top:3.1vh;
-  }
-  .margin-for-Text4{
-    margin-top:1.95vh;
-  }
-
-  .Sherwood-Forest-Lake {
-    margin-left: 0vw;
+  
+  .Image-that-float-left {
+    margin-left: -5vw;
     float:left;
     margin-right: 2.99vw;
-    margin-top: 3.22vh;
     margin-bottom: 3.6vh;
     width: 290px;
     height: 290px;
   }
 
-.figcapture-temp{
-  margin: 0;
-  width: 50vw;
-}
-
-  .Width-lim-for-content {
-    position: relative;
-    left: 50vw;
-    width: 50vw;
+  .figure-for-image-that-has-full-width{
+    margin: 0;
   }
 
-  .Image {
+
+  .Image-that-has-full-width {
     margin-top: 3.9vh;
     margin-bottom: 0vh;
-    margin-right: 0vw;
-    padding-right: 0vw;
+    margin-left: -5vw;
+    margin-right: -5vw;
     width: 50vw;
     height: 28.32vh;
   }
 
-  .Photo-descriprion {
+  .Descriprion-for-image-that-has-full-width {
     margin-top: 0.78vh;
-    font-family: Helvetica;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.75;
     text-align: center;
     color: #ababab;
   }
@@ -357,22 +343,6 @@
     border: solid 1px #d2d2d2;
   }
 
-  .Headline-H3 {
-    margin-top: 4.68vh;
-    font-family: Geomanist;
-    font-size: 1.875em;
-    font-weight: normal;
-  }
-
-  .Text-bold-hyperlink {
-    margin-bottom: 0vh;
-    padding-bottom: 0vh;
-    width: 40vw;
-    font-family: Helvetica;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.75;
-  }
   .text-style-1 {
     font-weight: bold;
   }
@@ -380,37 +350,27 @@
     color: #5a5aff;
   }
 
-  .Headline-H4 {
-    margin-top: 4.68vh;
-    font-family: Geomanist;
-    font-size: 1.5em;
-    font-weight: normal;
-  }
-
-  .cite {
+  .quote {
+    margin: 0;
     margin-top: 3.9vh;
     margin-bottom: 3.9vh;
-    margin-left: 6.25vw;
-    margin-right: 6.53vw;
     font-family: Roboto;
-    font-size: 1.05em;
+    font-size: 1.095em;
     font-weight: normal;
     font-style: italic;
     line-height: 1.6;
     text-align: center;
   }
 
-  .sea-of-trees-forest-plain {
-    margin-right: 0;
+  .Image-that-float-right {
     float: right;
+    margin-right: -5vw;
     margin-left: 2.78vw;
-    margin-top: 2.93vh;
-    margin-bottom: 7.03vh;
     width: 290px;
     height: 290px;
   }
 
-  .Shadow-box {
+  footer {
     margin-top: -64px;
     bottom: 64px;
     width: 50vw;
@@ -435,7 +395,7 @@
     z-index: 2;
   }
 
-  .Oval-3 {
+  .Author-ava-in-div-in-footer {
     width: 108px;
     height: 105.6px;
     transform: scale(1.1);
@@ -482,7 +442,7 @@
 
   .base-button {
     margin-right: 0;
-    margin-left: 140px;
+    margin-left: 11px;
     width: 104px;
     height: 40px;
     border-radius: 20px;
@@ -496,7 +456,7 @@
   .Subscribe-me-now {
     vertical-align: middle;
     margin-left: 11px;
-    width: 137px;
+    width: 268px;
     height: 19px;
     font-family: Helvetica;
     font-size: 16px;
@@ -525,10 +485,10 @@
     color: var(--white);
   }
 
-  .scroll-arrow1 img {
+  .scroll-arrow2 img {
     animation: arrow-movement 1.5s ease-in-out infinite; /* speed */
   }
-  .scroll-arrow2 img{
+  .scroll-arrow img{
     animation: arrow-movement 1.5s 0.75s ease-in-out infinite; /* speed - delay */
   }
 /* Animation */
